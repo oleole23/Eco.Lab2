@@ -1,4 +1,4 @@
-﻿Build started 29.03.2024 23:51:39.
+﻿Build started 30.03.2024 0:11:03.
      1>Project "C:\component c\Eco.Lab2\AssemblyFiles\Windows\VisualStudio_10\Eco.Lab1UnitTest.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Eco.Lab1UnitTest\DynamicDebug\Eco.Lab1UnitTest.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -40,4 +40,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.03
+Time Elapsed 00:00:02.18

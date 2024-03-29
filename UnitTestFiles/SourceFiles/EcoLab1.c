@@ -274,38 +274,44 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
     result = pIEcoLab1->pVTbl->QueryInterface(pIEcoLab1, &IID_IEcoCalculatorX, (void **) &pIX);
     if (result != 0 || pIX == 0) {
         goto Release;
-    }
+    }	
 
-	printf("Multiplication test 15 * 10 = %d\n", pIY->pVTbl->Multiplication(pIY, 15, 10));
-    printf("Division test 15 / 10 = %d\n", pIY->pVTbl->Division(pIY, 15, 10));
-    pIY->pVTbl->Release(pIY);
+	printf("Addition test:\n");
+	printf("23 + 7 = %d\n", pIX->pVTbl->Addition(pIX, 23, 7));
 
-	printf("Addition test 15 + 10 = %d\n", pIX->pVTbl->Addition(pIX, 15, 10));
-    printf("Subtraction test 15 - 10 = %d\n", pIX->pVTbl->Subtraction(pIX, 15, 10));
+	printf("Subtraction test:\n");
+	printf("25 - 15 = %d\n", pIX->pVTbl->Subtraction(pIX, 25, 15));
     pIX->pVTbl->Release(pIX);
 
-	printf("\nInterface test:\n");
+	printf("Multiplication test:");
+	printf("5 * 5 = %d\n", pIY->pVTbl->Multiplication(pIY, 5, 5));
 
+	printf("Division test:\n");
+	printf("15 / 3 = %d\n", pIY->pVTbl->Division(pIY, 15, 3));
+    pIY->pVTbl->Release(pIY);
+
+
+	printf("\nInterface test:\n");
     result = pIEcoLab1->pVTbl->QueryInterface(pIEcoLab1, &IID_IEcoCalculatorX, (void **) &pIX);
     if (result == 0) {
-        printf("Query IX from Lab1 - success\n");
+        printf("Calling X from Lab1\n");
         pIX->pVTbl->Release(pIX);
     }
     result = pIEcoLab1->pVTbl->QueryInterface(pIEcoLab1, &IID_IEcoCalculatorY, (void **) &pIY);
     if (result == 0) {
-        printf("Query IY from Lab1 - success\n");
+        printf("Calling Y from Lab1\n");
         pIY->pVTbl->Release(pIY);
     }
 
 	result = pIY->pVTbl->QueryInterface(pIY, &IID_IEcoCalculatorX, (void **) &pIX);
     if (result == 0) {
-        printf("Query IX from IY - success\n");
+        printf("Calling X from Y\n");
         pIX->pVTbl->Release(pIX);
     }
 
 	result = pIX->pVTbl->QueryInterface(pIX, &IID_IEcoCalculatorY, (void **) &pIY);
     if (result == 0) {
-        printf("Query IY from IX - success\n");
+        printf("Calling Y from X\n");
         pIY->pVTbl->Release(pIY);
     }
 
