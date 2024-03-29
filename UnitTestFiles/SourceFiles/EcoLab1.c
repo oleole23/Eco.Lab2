@@ -214,14 +214,6 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
 
 	IEcoCalculatorY* pIY = 0;
     IEcoCalculatorX* pIX = 0;
-	//int arraySizes[] = {80000, 90000, 100000, 200000, 300000, 400000};
-	//int* arrayToSort;
-	//int16_t a = 3;
-	//int16_t c;
-    //int16_t b = 96;
-	//size_t i;
-	//FILE * resultFile;
-
 
     /* Проверка и создание системного интрефейса */
     if (pISys == 0) {
