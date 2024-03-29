@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Eco.CalculatorE", "Eco.CalculatorE.vcxproj", "{CE05C40C-4306-477F-897C-9B7C2AD6B460}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE05C40C-4306-477F-897C-9B7C2AD6B460}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CE05C40C-4306-477F-897C-9B7C2AD6B460}.Debug|Win32.Build.0 = Debug|Win32
+		{CE05C40C-4306-477F-897C-9B7C2AD6B460}.Release|Win32.ActiveCfg = Release|Win32
+		{CE05C40C-4306-477F-897C-9B7C2AD6B460}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
